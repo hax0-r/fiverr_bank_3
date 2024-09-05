@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./Docs/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Docs/Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+    <title>Assurances</title>
+</head>
+
+<body>
+    <!-- navBar -->
+
+    <div class="max-w-6xl mx-auto py-20">
+        <div class="text-5xl pb-2 font-semibold st">Assurances</div>
+        <p class="text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore quae velit eligendi</p>
+        <div id="card-container" class="max-w-6xl mx-auto p-3 pt-8">
+            <!-- Cards will be dynamically -->
+        </div>
+    </div>
+
+    <script>
+        const cardsData = [
+            {
+                image: "./Docs/images/Home/Banks/hello.jpeg",
+                title: "Release of Tailwind Nextjs Starter Blog v2.0",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, tempora?",
+                details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel enim, eum quod earum possimus incidunt quibusdam nobis repellat porro quis perferendis Lorem ipsum dolor sit amet consecte ad facere!",
+                link: "#",
+                linkText: "Learn More"
+            },
+            {
+                image: "./Docs/images/Home/Banks/hello.jpeg",
+                title: "Release of Tailwind Nextjs Starter Blog v2.0",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, tempora?",
+                details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel enim, eum quod earum possimus incidunt quibusdam nobis repellat porro quis perferendis Lorem ipsum dolor sit amet consecte ad facere!",
+                link: "#",
+                linkText: "Learn More"
+            },
+            {
+                image: "./Docs/images/Home/Banks/hello.jpeg",
+                title: "Release of Tailwind Nextjs Starter Blog v2.0",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, tempora?",
+                details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel enim, eum quod earum possimus incidunt quibusdam nobis repellat porro quis perferendis Lorem ipsum dolor sit amet consecte ad facere!",
+                link: "#",
+                linkText: "Learn More"
+            },
+            // You can add more objects here to create more cards
+        ];
+
+        // Function to create a card dynamically
+        function createCard(card) {
+            return `
+                <div class="w-full h-[1px] bg-zinc-200 mb-8"></div>
+                <div class="flex items-start sm:flex-row flex-col pt-8 justify-start gap-5">
+                    <img src="${card.image}" class="h-[15rem] mx-auto sm:mx-0" alt="">
+                    <div>
+                        <h2 class="text-2xl font-semibold">${card.title}</h2>
+                        <p class="font-medium pt-1">${card.description}</p>
+                        <p class="text-zinc-500 py-5">${card.details}</p>
+                        <a href="${card.link}">${card.linkText}</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Get the container where cards will be added
+        const cardContainer = document.getElementById('card-container');
+
+        // Render each card dynamically
+        cardsData.forEach(card => {
+            cardContainer.innerHTML += createCard(card);
+        });
+    </script>
+</body>
+
+</html>
