@@ -15,8 +15,13 @@
 }
 
 .st{
-    color: #af9e8e;
+    color: #7e6c5e;
 }
 .sb{
-    background: #af9e8e;
+    background: #7e6c5e;
+}
+
+.cp{
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 0%);
+
 }
