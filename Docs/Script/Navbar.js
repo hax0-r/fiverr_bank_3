@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
         <span class="ml-3 text-xl font-bold">Square <p class="leading-5 pl-3">Finance</p></span>
       </a>
       <div class="mt-10 flex flex-col gap-1">
-        <a href="./Maintenance.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Banques Pro</a>
-        <a href="./Maintenance.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Assurances</a>
-        <a href="./Maintenance.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Notre histoire</a>
-        <a href="./Maintenance.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Blog</a>
+        <a href="./Banques.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Banques Pro</a>
+        <a href="./Assurances.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Assurances</a>
+        <a href="./story.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Notre histoire</a>
+        <a href="./blog.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Blog</a>
       </div>
     </div>
   `;
