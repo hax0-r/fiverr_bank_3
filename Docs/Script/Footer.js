@@ -45,17 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="block">
             <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Des autres</h4>
             <ul class="grid gap-6 text-center lg:text-left">
-              <li><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Mentions Légales</a></li>
-              <li><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Condition générale</a></li>
+              <li><a href="./Privacy.html" class="text-gray-600 hover:text-gray-900">Mentions Légales</a></li>
+              <li><a href="./Privacy.html" class="text-gray-600 hover:text-gray-900">Condition générale</a></li>
               <li><a href="./Blog.html" class="text-gray-600 hover:text-gray-900">Blog</a></li>
             </ul>
           </div>
           <div class="block">
             <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Conseils</h4>
             <ul class="grid gap-6 text-center lg:text-left">
-              <li><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Customer Support</a></li>
-              <li><a href="javascript:;" class="text-gray-600 hover:text-gray-900">support@jecomparetout.fr</a></li>
-              <li><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Licence</a></li>
+              <li><a href="mailto:support@jecomparetout.fr" class="text-gray-600 hover:text-gray-900">Customer Support</a></li>
+              <li><a href="mailto:support@jecomparetout.fr" class="text-gray-600 hover:text-gray-900">support@jecomparetout.fr</a></li>
+              <li><a href="./Privacy.html" class="text-gray-600 hover:text-gray-900">Licence</a></li>
             </ul>
           </div>
         </div>
