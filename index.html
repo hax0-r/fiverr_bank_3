@@ -16,9 +16,81 @@
 
 <body>
   <section class="bg-zinc-100 pb-12 sm:pb-14 relative overflow-hidden">
-    <div id="navbar" class="relative z-30"></div>
-      <img src="./Docs/images/Home/pngegg (4).png" class="absolute z-10 left-0 h-96 opacity-20 top-0" alt=""> 
-      <img src="./Docs/images/Home/pngegg (5).png" class="absolute right-0 h-96 opacity-10  top-40 rotate-180" alt="">
+    <!-- <div id="navbar" class="relative z-30"></div> -->
+
+
+
+
+
+    <header class="fixed w-full top-4  body-font px-4 z-20">
+      <div class="h-20 cssGlassNav px-6 max-w-[75rem] w-full mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-12">
+          <a href="./index.html" class="flex items-center">
+            <img src="./Docs/images/logo.png" class="h-12" alt="">
+            <span class="ml-3 text-lg font-bold ">Square <p class="leading-4 pl-3">Finance</p></span>
+          </a>
+          <nav class="lg:flex hidden ">
+            <a href="./Banques.html" class=" mr-5 font-medium ">Banques Pro</a>
+            <a href="./Assurances.html" class=" mr-5 font-medium ">Assurances</a>
+            <a href="./story.html" class=" mr-5 font-medium ">Notre histoire</a>
+            <a href="./blog.html" class="  font-medium">Blog</a>
+          </nav>
+        </div>
+        <div class="hidden md:block">
+          <a href="./index.html#allInOne">
+            <button
+              class="inline-flex items-center  border-zinc-200  py-3 transition-all px-5  focus:outline-none hover:bg-gray-200 rounded-full border-2 text-base mt-4 md:mt-0">Nos
+              comparaisons
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </a>
+        </div>
+        <i class="fa-solid fa-bars text-2xl cursor-pointer z-10 md:hidden" id="openNav"></i>
+      </div>
+    </header>
+
+    <div id="resNav" class="fixed transition-all right-0 top-0 h-screen w-0 overflow-hidden  bg-[#ad9c8c] z-50 ">
+      <h2 class="right-5 top-8 absolute cursor-pointer " id="closeNav">
+        <i class="fa-solid fa-xmark text-2xl"></i>
+      </h2>
+      <a class="flex items-center">
+        <img src="./Docs/images/logo.png" class="h-16" alt="">
+        <span class="ml-3 text-xl font-bold ">Square <p class="leading-5 pl-3">Finance</p></span>
+      </a>
+      <div class="mt-10 flex flex-col gap-1">
+        <a href="./Maintenance.html"
+          class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium ">Banques Pro</a>
+        <a href="./Maintenance.html"
+          class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium ">Assurances</a>
+        <a href="./Maintenance.html"
+          class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium ">Notre histoire</a>
+        <a href="./Maintenance.html"
+          class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Blog</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <img src="./Docs/images/Home/pngegg (4).png" class="absolute z-10 left-0 h-96 opacity-20 top-0" alt="">
+    <img src="./Docs/images/Home/pngegg (5).png" class="absolute right-0 h-96 opacity-10  top-40 rotate-180" alt="">
 
     <div
       class="mx-auto max-w-7xl flex flex-col items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 relative text-center">
@@ -34,15 +106,16 @@
       </div>
       <h1
         class="max-w-3xl mx-auto text-center font-manrope font-bold text-4xl text-gray-900 mb-5 md:text-5xl leading-[50px]">
-        Gestion de vos Finances grâce à notre 
+        Gestion de vos Finances grâce à notre
         <span class="st">Square Finance</span>
       </h1>
       <p class="max-w-md mx-auto text-center text-base font-normal leading-7 text-gray-500 ">
         Grâce à notre plateforme, comparez facilement prêts, assurances et crédits pour trouver les meilleures offres.
-</p>
+      </p>
     </div>
 
-    <div class="flex items-center sm:flex-row flex-col overflow-hidden justify-center sm:gap-16 gap-12 container mx-auto md:pt-20 pt-10">
+    <div
+      class="flex items-center sm:flex-row flex-col overflow-hidden justify-center sm:gap-16 gap-12 container mx-auto md:pt-20 pt-10">
       <div class="">
         <a href="#allInOne"
           class="w-full md:w-auto  mb-7 inline-flex items-center justify-center py-5 px-8 text-base font-semibold text-center text-white rounded-full sb shadow-xs transition-all duration-500">
@@ -79,14 +152,14 @@
       </div>
 
       <div class="flex flex-col gap-3">
-        <p class="font-semibold">Notre réussite quotidienne        </p>
+        <p class="font-semibold">Notre réussite quotidienne </p>
         <div class="">
           <h2 class="text-4xl font-bold pt-3 st">89M+</h2>
-          <p>Transactions quotidiennes          </p>
+          <p>Transactions quotidiennes </p>
         </div>
         <div class="">
           <h2 class="text-4xl font-bold pt-3 st">+9%</h2>
-          <p>Un cashback quotidien illimité.          </p>
+          <p>Un cashback quotidien illimité. </p>
         </div>
       </div>
     </div>
@@ -139,9 +212,15 @@
       </div>
       <div class="mt-6 border-t pt-12">
         <div class="grid grid-cols-3 gap-4 max-w-[70rem] mx-auto">
-          <a href="./bankHello.html"><div> <img src="./Docs/images/Home/Banks/hello.jpeg" alt="Image 1" class=" h-auto  cursor-pointer"> </div></a>
-          <a href="./bank-fortuneo.html"><div> <img src="./Docs/images/Home/Banks/fortuneo.png" alt="Image 2" class=" h-auto  cursor-pointer"> </div></a>
-          <a href="./bank-bourso.html"><div> <img src="./Docs/images/Home/Banks/bourso.png" alt="Image 3" class=" h-auto  cursor-pointer"> </div></a>
+          <a href="./bankHello.html">
+            <div> <img src="./Docs/images/Home/Banks/hello.jpeg" alt="Image 1" class=" h-auto  cursor-pointer"> </div>
+          </a>
+          <a href="./bank-fortuneo.html">
+            <div> <img src="./Docs/images/Home/Banks/fortuneo.png" alt="Image 2" class=" h-auto  cursor-pointer"> </div>
+          </a>
+          <a href="./bank-bourso.html">
+            <div> <img src="./Docs/images/Home/Banks/bourso.png" alt="Image 3" class=" h-auto  cursor-pointer"> </div>
+          </a>
         </div>
       </div>
     </div>
@@ -150,7 +229,7 @@
 
 
   <!-- =========Slider=================== -->
-   
+
   <section class="bg-gray-50 overflow-hidden mt-10">
     <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
@@ -219,7 +298,9 @@
                     <p class="text-2xl font-bold text-zinc-600 sm:text-3xl">Hello bank</p>
 
                     <p class="mt-4 leading-relaxed text-gray-700">
-                      Hello Bank! est une banque digitale qui offre des services complets et innovants. Avec des comptes gratuits, une application intuitive, et un service client disponible 24/7, Hello Bank! vous permet de gérer votre argent en toute simplicité où que vous soyez.
+                      Hello Bank! est une banque digitale qui offre des services complets et innovants. Avec des comptes
+                      gratuits, une application intuitive, et un service client disponible 24/7, Hello Bank! vous permet
+                      de gérer votre argent en toute simplicité où que vous soyez.
                     </p>
                   </div>
                 </div>
@@ -265,7 +346,8 @@
                     <p class="text-2xl font-bold text-zinc-600 sm:text-3xl">Fortuneo banque</p>
 
                     <p class="mt-4 leading-relaxed text-gray-700">
-                      Une banque en ligne spécialement conçue pour les jeunes aventuriers, proposant une grande souplesse et des services sur mesure, peu importe votre emplacement dans le monde.
+                      Une banque en ligne spécialement conçue pour les jeunes aventuriers, proposant une grande
+                      souplesse et des services sur mesure, peu importe votre emplacement dans le monde.
 
                     </p>
                   </div>
@@ -312,7 +394,8 @@
                     <p class="text-2xl font-bold text-zinc-600 sm:text-3xl">Bourso bank</p>
 
                     <p class="mt-4 leading-relaxed text-gray-700">
-                      Une institution financière en ligne spécialement conçue pour les jeunes aventuriers, proposant une grande souplesse et des services sur mesure, peu importe votre emplacement dans le monde.
+                      Une institution financière en ligne spécialement conçue pour les jeunes aventuriers, proposant une
+                      grande souplesse et des services sur mesure, peu importe votre emplacement dans le monde.
 
                     </p>
                   </div>
@@ -609,7 +692,8 @@
   <div class="sb">
     <section class="max-w-5xl mx-auto w-full px-10 py-16">
       <div class="flex items-center justify-center flex-col gap-y-2 py-5">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold max-w-md mx-auto text-center text-white ">C'est ce que nos  <span class="text-[#e8d9c6]">clients</span> ont à dire.
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold max-w-md mx-auto text-center text-white ">C'est ce que nos
+          <span class="text-[#e8d9c6]">clients</span> ont à dire.
         </h2>
         <p class="text-lg font-medium text-[#e8d9c6]">Explore les avantages de notre service pour vous.</p>
       </div>
@@ -618,7 +702,8 @@
           class="border transition-all duration-300 cssGlass1 p-7 rounded-xl bg-[#ad9c8c] drop-shadow-md border-[#7d6b5e] col-span-2 flex flex-col gap-y-10 justify-between">
           <div class="flex flex-col gap-y-3.5">
             <p class="font-bold text-xl text-white">Un soutien client efficace</p>
-            <p class="font-medium text-white">Le service de support client de notre service est extrêmement réactif et précieux. Ils ont fait de tout leur possible pour m'aider avec mon problème.</p>
+            <p class="font-medium text-white">Le service de support client de notre service est extrêmement réactif et
+              précieux. Ils ont fait de tout leur possible pour m'aider avec mon problème.</p>
           </div>
           <div class="flex flex-col"><img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Emily Smith"
               class="h-10 w-10">
@@ -629,8 +714,9 @@
         <div
           class="border  p-7 rounded-xl bg-[#ad9c8c] transition-all duration-300 cssGlass1 drop-shadow-md border-[#7d6b5e] col-span-3 flex flex-col gap-y-10 justify-between">
           <div class="flex flex-col gap-y-3.5">
-            <p class="font-bold text-xl text-white">Excellentes caractéristiques du produit            </p>
-            <p class="font-medium text-white">Les avantages proposés par notre service sont exceptionnels. Ils ont grandement amélioré notre flux de travail et notre efficacité.            </p>
+            <p class="font-bold text-xl text-white">Excellentes caractéristiques du produit </p>
+            <p class="font-medium text-white">Les avantages proposés par notre service sont exceptionnels. Ils ont
+              grandement amélioré notre flux de travail et notre efficacité. </p>
           </div>
           <div class="flex flex-col"><img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Michael Johnson"
               class="h-10 w-10">
@@ -641,8 +727,9 @@
         <div
           class="border transition-all duration-300 cssGlass1 p-7 rounded-xl bg-[#ad9c8c] drop-shadow-md border-[#7d6b5e] col-span-3 flex flex-col gap-y-10 justify-between">
           <div class="flex flex-col gap-y-3.5">
-            <p class="font-bold text-xl text-white">Processus d'intégration parfait            </p>
-            <p class="font-medium text-white">Nous avons intégré nos systèmes avec notre service de manière fluide et sans difficulté. Le groupe de soutien nous a guidés à chaque étape du processus.
+            <p class="font-bold text-xl text-white">Processus d'intégration parfait </p>
+            <p class="font-medium text-white">Nous avons intégré nos systèmes avec notre service de manière fluide et
+              sans difficulté. Le groupe de soutien nous a guidés à chaque étape du processus.
             </p>
           </div>
           <div class="flex flex-col"><img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Sarah Brown"
@@ -656,7 +743,8 @@
           <div class="flex flex-col gap-y-3.5">
             <p class="font-bold text-xl text-white">Le service d'uptime est fiable.
             </p>
-            <p class="font-medium text-white">Notre service a constamment maintenu une disponibilité élevée, garantissant ainsi que nos opérations se déroulent sans perturbations.            </p>
+            <p class="font-medium text-white">Notre service a constamment maintenu une disponibilité élevée,
+              garantissant ainsi que nos opérations se déroulent sans perturbations. </p>
           </div>
           <div class="flex flex-col"><img src="https://randomuser.me/api/portraits/men/71.jpg" alt="James White"
               class="h-10 w-10">
@@ -678,14 +766,16 @@
 
     <div class="max-w-screen-md mx-auto text-center">
       <h1 class="mb-4 text-3xl font-bold dark:text-white">Qui est <span class="st">Square Finance</span></h1>
-      <p class="text-gray-500 dark:text-white px-5">Square Finance, votre expert en comparatifs en ligne, vous propose des
+      <p class="text-gray-500 dark:text-white px-5">Square Finance, votre expert en comparatifs en ligne, vous propose
+        des
         sélections exclusives pour simplifier vos choix et faciliter vos comparaisons d'achats en ligne</p>
     </div>
 
     <div class="flex sm:flex-row flex-col items-center justify-center mx-auto mt-10">
       <a class="card1 max-w-lg" href="./Banques.html">
         <h3 class="text-2xl font-semibold pb-4">Banque Pro</h3>
-        <p class="small">Expert bancaire très compétent ayant une expertise reconnue dans l'analyse financière, la gestion des risques et le service client.
+        <p class="small">Expert bancaire très compétent ayant une expertise reconnue dans l'analyse financière, la
+          gestion des risques et le service client.
         </p>
         <div class="go-corner" href="#">
           <div class="go-arrow">
@@ -695,7 +785,8 @@
       </a>
       <a class="card1 max-w-lg" href="./Assurances.html">
         <h3 class="text-2xl font-semibold pb-4">Assurance</h3>
-        <p class="small">Expert en banque avec une expérience approfondie, spécialisé dans l'analyse financière, la gestion des risques et le service client.
+        <p class="small">Expert en banque avec une expérience approfondie, spécialisé dans l'analyse financière, la
+          gestion des risques et le service client.
         </p>
         <div class="go-corner" href="#">
           <div class="go-arrow">

@@ -109,3 +109,11 @@ backdrop-filter: blur(14px);
 -webkit-backdrop-filter: blur(14px);
 border: 1px solid rgba(173, 156, 140, 0.38);
 }
+.cssGlassNav {
+background: rgba(173, 156, 140, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14px);
+-webkit-backdrop-filter: blur(14px);
+border: 1px solid rgba(173, 156, 140, 0.38);
+}
