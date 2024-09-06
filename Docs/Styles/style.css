@@ -121,3 +121,40 @@ border: 1px solid rgba(173, 156, 140, 0.38);
 .resNavWidth{
     width: 100px;
 }
+
+.navUnderLine {
+    position: relative;
+    padding: 0 2px;
+    cursor: pointer;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #000000b0;
+      transition: 200ms all;
+    }
+  
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  .slidein {
+    animation: slideAnimation 1s ease var(--slidein-delay, 0) forwards;
+  }
+
+  @keyframes slideAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-10px)
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }

@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
           <span class="ml-3 text-lg font-bold">Square <p class="leading-4 pl-3">Finance</p></span>
         </a>
         <nav class="lg:flex hidden">
-          <a href="./Banques.html" class="mr-5 font-medium">Banques Pro</a>
-          <a href="./Assurances.html" class="mr-5 font-medium">Assurances</a>
-          <a href="./story.html" class="mr-5 font-medium">Notre histoire</a>
-          <a href="./blog.html" class="font-medium">Blog</a>
+          <a href="./Banques.html" class="mr-5 navUnderLine font-medium">Banques Pro</a>
+          <a href="./Assurances.html" class="mr-5 navUnderLine font-medium">Assurances</a>
+          <a href="./story.html" class="mr-5 navUnderLine font-medium">Notre histoire</a>
+          <a href="./blog.html" class="font-medium navUnderLine">Blog</a>
         </nav>
         <div class="hidden md:block">
           <a href="./index.html#allInOne">
