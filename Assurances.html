@@ -8,66 +8,90 @@
     <link rel="shortcut icon" href="./Docs/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./Docs/Styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
-    <title>Assurances</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Assurance</title>
 </head>
 
 <body>
-    <!-- navBar -->
+    <div id="navbar"></div>
 
-    <div class="max-w-6xl mx-auto py-20">
-        <div class="text-5xl pb-2 font-semibold st">Assurances</div>
-        <p class="text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore quae velit eligendi</p>
+    <div class="max-w-6xl mx-auto py-20 sm:pb-20 pb-0 ">
+        <div class="text-5xl pb-2 font-semibold st px-5 sm:px-0 ">Assurance</div>
+        <p class="text-zinc-500 px-5 sm:px-0 max-w-2xl">Expert en banque avec une expérience approfondie, spécialisé dans l'analyse financière, la gestion des risques et le service client.        </p>
         <div id="card-container" class="max-w-6xl mx-auto p-3 pt-8">
             <!-- Cards will be dynamically -->
         </div>
     </div>
 
-    <script>
-        const cardsData = [
-            {
-                image: "./Docs/images/Home/Banks/hello.jpeg",
-                title: "Release of Tailwind Nextjs Starter Blog v2.0",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, tempora?",
-                details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel enim, eum quod earum possimus incidunt quibusdam nobis repellat porro quis perferendis Lorem ipsum dolor sit amet consecte ad facere!",
-                link: "#",
-                linkText: "Learn More"
-            },
-            {
-                image: "./Docs/images/Home/Banks/hello.jpeg",
-                title: "Release of Tailwind Nextjs Starter Blog v2.0",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, tempora?",
-                details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel enim, eum quod earum possimus incidunt quibusdam nobis repellat porro quis perferendis Lorem ipsum dolor sit amet consecte ad facere!",
-                link: "#",
-                linkText: "Learn More"
-            },
-            {
-                image: "./Docs/images/Home/Banks/hello.jpeg",
-                title: "Release of Tailwind Nextjs Starter Blog v2.0",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, tempora?",
-                details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel enim, eum quod earum possimus incidunt quibusdam nobis repellat porro quis perferendis Lorem ipsum dolor sit amet consecte ad facere!",
-                link: "#",
-                linkText: "Learn More"
-            },
-            // You can add more objects here to create more cards
-        ];
 
-        // Function to create a card dynamically
+    <div id="footer"></div>
+
+    <script src="./Docs/Script/Footer.js"></script>
+    <script src="./Docs/Script/Navbar.js"></script>
+    <script>
+
+const cardsData = [
+    {
+        image: "./Docs/images/Home/assurance/easy.webp",
+        title: "Easybourse",
+        description: "La protection simplifiée et accessible.",
+        details: "Easy Assurance propose des solutions d'assurance abordables et personnalisées pour tous. Que ce soit pour votre maison, votre voiture, ou votre santé, nous rendons l'assurance simple et accessible avec des couvertures adaptées à vos besoins.",
+        link: "./easy.html",
+        linkText: "Explore davantage"
+    },
+    {
+        image: "./Docs/images/Home/assurance/euro.webp",
+        title: "Euro Assurance",
+        description: "Assurance fiable et sécurisée.",
+        details: "Euro Assurance offre des polices d'assurance flexibles pour les véhicules, les habitations, et la santé. Nous mettons l'accent sur la sécurité et la tranquillité d'esprit de nos clients avec une gestion rapide et efficace des sinistres.",
+        link: "./euro.html",
+        linkText: "Explore davantage"
+    },
+    {
+        image: "./Docs/images/Home/assurance/fortuneo.webp",
+        title: "Fortuneo Assurance",
+        description: "Assurance innovante et économique.",
+        details: "Fortuneo Assurance se distingue par ses offres d'assurance en ligne complètes et économiques. Nous vous aidons à protéger votre avenir financier avec des produits d'assurance vie, habitation, et automobile adaptés à vos besoins.",
+        link: "./fortuneo.html",
+        linkText: "Explore davantage"
+    },
+    {
+        image: "./Docs/images/Home/assurance/allianz.webp",
+        title: "Allianz Assurance",
+        description: "Votre partenaire mondial en assurance.",
+        details: "Allianz Assurance offre une gamme étendue de produits d'assurance pour répondre aux besoins des particuliers et des entreprises. De l'assurance santé à l'assurance habitation, nous garantissons une protection globale avec un service client exceptionnel.",
+        link: "./allianz.html",
+        linkText: "Explore davantage"
+    },
+    {
+        image: "./Docs/images/Home/assurance/direct.webp",
+        title: "Direct Assurance",
+        description: "L'assurance directe, simple et efficace.",
+        details: "Direct Assurance vous propose une souscription d'assurance rapide et facile en ligne. Avec des offres compétitives pour l'assurance auto, moto, et habitation, vous bénéficiez d'une couverture complète sans complication.",
+        link: "./direct.html",
+        linkText: "Explore davantage"
+    },
+];
+
         function createCard(card) {
             return `
-                <div class="w-full h-[1px] bg-zinc-200 mb-8"></div>
+                <div class="w-full h-[1px] bg-zinc-200 mb-8 mt-2"></div>
                 <div class="flex items-start sm:flex-row flex-col pt-8 justify-start gap-5">
-                    <img src="${card.image}" class="h-[15rem] mx-auto sm:mx-0" alt="">
+                    <div class="max-w-[20rem] w-full">
+                        <img src="${card.image}" class="h-full mx-auto" alt="">
+                    </div>
                     <div>
                         <h2 class="text-2xl font-semibold">${card.title}</h2>
                         <p class="font-medium pt-1">${card.description}</p>
                         <p class="text-zinc-500 py-5">${card.details}</p>
-                        <a href="${card.link}">${card.linkText}</a>
+                        <a href="${card.link}" class="hover:underline">${card.linkText} &#8640;</a>
                     </div>
                 </div>
             `;
         }
 
-        // Get the container where cards will be added
         const cardContainer = document.getElementById('card-container');
 
         // Render each card dynamically

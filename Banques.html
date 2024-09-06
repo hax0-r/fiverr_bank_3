@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./Docs/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Docs/Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Banques Pro</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="max-w-6xl mx-auto py-20 sm:pb-20 pb-0 ">
+        <div class="text-5xl pb-2 font-semibold st px-5 sm:px-0 ">Banques Pro</div>
+        <p class="text-zinc-500 px-5 sm:px-0 max-w-2xl">Expert bancaire très compétent ayant une expertise reconnue dans
+            l'analyse financière, la gestion des risques et le service client. </p>
+        <div id="card-container" class="max-w-6xl mx-auto p-3 pt-8">
+            <!-- Cards will be dynamically -->
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+
+    <script src="./Docs/Script/Footer.js"></script>
+    <script src="./Docs/Script/Navbar.js"></script>
+    <script>
+
+        const cardsData = [
+            {
+                image: "./Docs/images/Home/ProBanks/blank.webp",
+                title: "Blank",
+                description: "Cela facilite vos finances et facilite le soutien.",
+                details: "Blank Bank vous accompagne avec des solutions de gestion de patrimoine et des services financiers innovants. Avec une approche axée sur la simplicité et l'efficacité, nous vous aidons à naviguer dans le monde complexe des finances avec facilité.",
+                link: "./blank.html",
+                linkText: "Explore davantage"
+            },
+            {
+                image: "./Docs/images/Home/ProBanks/fiducial.webp",
+                title: "Fiducial Bank",
+                description: "Votre partenaire de confiance en gestion financière.",
+                details: "Fiducial Bank vous offre des solutions financières personnalisées pour répondre aux besoins des entreprises et des entrepreneurs. Avec des services spécialisés en comptabilité, fiscalité, et conseils juridiques, nous vous aidons à optimiser votre croissance et votre rentabilité.",
+                link: "./fiducial.html",
+                linkText: "Explore davantage"
+            },
+            {
+                image: "./Docs/images/Home/ProBanks/finom.webp",
+                title: "Finom",
+                description: "La banque moderne pour les entrepreneurs.",
+                details: "Finom propose une plateforme innovante qui combine les services bancaires, la facturation, et la gestion financière. Idéale pour les PME et les freelances, Finom facilite les paiements rapides et sécurisés, avec une interface conviviale pour une gestion simplifiée.",
+                link: "./finom.html",
+                linkText: "Explore davantage"
+            },
+            {
+                image: "./Docs/images/Home/ProBanks/hello.webp",
+                title: "Hello Bank!",
+                description: "Une banque simple, rapide et moderne.",
+                details: "Hello Bank! est une banque digitale qui offre des services complets et innovants. Avec des comptes gratuits, une application intuitive, et un service client disponible 24/7, Hello Bank! vous permet de gérer votre argent en toute simplicité où que vous soyez.",
+                link: "./hello.html",
+                linkText: "Explore davantage"
+            },
+            {
+                image: "./Docs/images/Home/ProBanks/memo.webp",
+                title: "Memo Bank",
+                description: "La banque pour les PME ambitieuses.",
+                details: "Memo Bank est conçue pour les petites et moyennes entreprises, offrant des services bancaires adaptés à leurs besoins spécifiques. Avec des prêts personnalisés et une gestion efficace de la trésorerie, Memo Bank est le partenaire idéal pour la croissance de votre entreprise.",
+                link: "./memo.html",
+                linkText: "Explore davantage"
+            },
+            {
+                image: "./Docs/images/Home/ProBanks/mona.webp",
+                title: "Mona Bank",
+                description: "Une approche personnelle des services bancaires.",
+                details: "Mona Bank se distingue par son approche humaine et personnalisée. Spécialisée dans les solutions d'épargne et de crédit, elle propose une gamme complète de services bancaires pour les particuliers, en se concentrant sur la transparence et la satisfaction du client.",
+                link: "./mona.html",
+                linkText: "Explore davantage"
+            },
+            {
+                image: "./Docs/images/Home/ProBanks/qonto.webp",
+                title: "Qonto",
+                description: "La néo-banque des entreprises et des freelances.",
+                details: "Qonto simplifie la gestion financière des entreprises avec une interface intuitive et des fonctionnalités avancées. Elle offre des services bancaires rapides et efficaces, tels que des paiements automatisés, une gestion des dépenses en équipe, et un support client de qualité.",
+                link: "./qonto.html",
+                linkText: "Explore davantage"
+            },
+        ];
+
+        function createCard(card) {
+            return `
+                <div class="w-full h-[1px] bg-zinc-200 mb-8 mt-2"></div>
+                <div class="flex items-start sm:flex-row flex-col pt-8 justify-start gap-5">
+                    <div class="max-w-[20rem] w-full">
+                        <img src="${card.image}" class="h-full mx-auto sm:mx-0" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold">${card.title}</h2>
+                        <p class="font-medium pt-1">${card.description}</p>
+                        <p class="text-zinc-500 py-5">${card.details}</p>
+                        <a href="${card.link}" class="hover:underline">${card.linkText} &#8640;</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        const cardContainer = document.getElementById('card-container');
+
+        // Render each card dynamically
+        cardsData.forEach(card => {
+            cardContainer.innerHTML += createCard(card);
+        });
+    </script>
+</body>
+
+</html>
