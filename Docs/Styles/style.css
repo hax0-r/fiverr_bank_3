@@ -117,3 +117,7 @@ backdrop-filter: blur(14px);
 -webkit-backdrop-filter: blur(14px);
 border: 1px solid rgba(173, 156, 140, 0.38);
 }
+
+.resNavWidth{
+    width: 100px;
+}
