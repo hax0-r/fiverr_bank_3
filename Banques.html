@@ -18,9 +18,9 @@
     <div id="navbar" class="relative z-30 pb-20"></div>
 
     <div class="max-w-6xl mx-auto py-20 sm:pb-20 pb-0 ">
-        <div class="text-5xl pb-2 font-semibold st px-5 opacity-0 slidein [--slidein-delay:300ms] sm:px-0 ">Banques Pro</div>
-        <p class="text-zinc-500 px-5 sm:px-0 max-w-2xl opacity-0 slidein [--slidein-delay:500ms]">Expert bancaire très compétent ayant une expertise reconnue dans
-            l'analyse financière, la gestion des risques et le service client. </p>
+        <div class="text-5xl pb-2 font-semibold st px-5 opacity-0 slidein [--slidein-delay:300ms] sm:px-0 ">Offres pour les professionnels</div>
+        <p class="text-zinc-500 px-5 sm:px-0 max-w-2xl opacity-0 slidein [--slidein-delay:500ms]">Les banques en ligne ne sont pas uniquement pour les particuliers. Chef d’entreprise ou
+            entrepreneurs, vous pouvez également bénéficier d’offres avantageuses pour votre compte pro.</p>
         <div id="card-container" class="max-w-6xl mx-auto p-3 pt-8 opacity-0 slidein [--slidein-delay:700ms]">
             <!-- Cards will be dynamically -->
         </div>
@@ -35,60 +35,60 @@
 
         const cardsData = [
             {
-                image: "./Docs/images/Home/ProBanks/blank.webp",
+                image: "./Docs/images/Home/Banks/blank.png",
                 title: "Blank",
                 description: "Cela facilite vos finances et facilite le soutien.",
                 details: "Blank Bank vous accompagne avec des solutions de gestion de patrimoine et des services financiers innovants. Avec une approche axée sur la simplicité et l'efficacité, nous vous aidons à naviguer dans le monde complexe des finances avec facilité.",
                 link: "./bankBlank.html",
-                linkText: "Explore davantage"
+                linkText: " Explorez d’avantage"
             },
             {
-                image: "./Docs/images/Home/ProBanks/fiducial.webp",
+                image: "./Docs/images/Home/Banks/fiduical.png",
                 title: "Fiducial Bank",
                 description: "Votre partenaire de confiance en gestion financière.",
                 details: "Fiducial Bank vous offre des solutions financières personnalisées pour répondre aux besoins des entreprises et des entrepreneurs. Avec des services spécialisés en comptabilité, fiscalité, et conseils juridiques, nous vous aidons à optimiser votre croissance et votre rentabilité.",
                 link: "./bank-fiducial.html",
-                linkText: "Explore davantage"
+                linkText: " Explorez d’avantage"
             },
             {
-                image: "./Docs/images/Home/ProBanks/finom.webp",
+                image: "./Docs/images/Home/Banks/finom.webp",
                 title: "Finom",
                 description: "La banque moderne pour les entrepreneurs.",
                 details: "Finom propose une plateforme innovante qui combine les services bancaires, la facturation, et la gestion financière. Idéale pour les PME et les freelances, Finom facilite les paiements rapides et sécurisés, avec une interface conviviale pour une gestion simplifiée.",
                 link: "./bank-finom.html",
-                linkText: "Explore davantage"
+                linkText: " Explorez d’avantage"
             },
             {
-                image: "./Docs/images/Home/ProBanks/hello.webp",
+                image: "./Docs/images/Home/Banks/hello.jpeg",
                 title: "Hello Bank!",
                 description: "Une banque simple, rapide et moderne.",
                 details: "Hello Bank! est une banque digitale qui offre des services complets et innovants. Avec des comptes gratuits, une application intuitive, et un service client disponible 24/7, Hello Bank! vous permet de gérer votre argent en toute simplicité où que vous soyez.",
                 link: "./bankHello.html",
-                linkText: "Explore davantage"
+                linkText: " Explorez d’avantage"
             },
             {
-                image: "./Docs/images/Home/ProBanks/memo.webp",
+                image: "./Docs/images/Home/Banks/memo.png",
                 title: "Memo Bank",
                 description: "La banque pour les PME ambitieuses.",
                 details: "Memo Bank est conçue pour les petites et moyennes entreprises, offrant des services bancaires adaptés à leurs besoins spécifiques. Avec des prêts personnalisés et une gestion efficace de la trésorerie, Memo Bank est le partenaire idéal pour la croissance de votre entreprise.",
                 link: "./bank-memo.html",
-                linkText: "Explore davantage"
+                linkText: " Explorez d’avantage"
             },
             {
-                image: "./Docs/images/Home/ProBanks/mona.webp",
+                image: "./Docs/images/Home/Banks/mona.png",
                 title: "Mona Bank",
                 description: "Une approche personnelle des services bancaires.",
                 details: "Mona Bank se distingue par son approche humaine et personnalisée. Spécialisée dans les solutions d'épargne et de crédit, elle propose une gamme complète de services bancaires pour les particuliers, en se concentrant sur la transparence et la satisfaction du client.",
                 link: "./bank-monabanq.html",
-                linkText: "Explore davantage"
+                linkText: " Explorez d’avantage"
             },
             {
-                image: "./Docs/images/Home/ProBanks/qonto.webp",
+                image: "./Docs/images/Home/Banks/qonto.png",
                 title: "Qonto",
                 description: "La néo-banque des entreprises et des freelances.",
                 details: "Qonto simplifie la gestion financière des entreprises avec une interface intuitive et des fonctionnalités avancées. Elle offre des services bancaires rapides et efficaces, tels que des paiements automatisés, une gestion des dépenses en équipe, et un support client de qualité.",
                 link: "./bank-qonto.html",
-                linkText: "Explore davantage"
+                linkText: " Explorez d’avantage"
             },
         ];
 
@@ -96,8 +96,8 @@
             return `
                 <div class="w-full h-[1px] bg-zinc-200 mb-8 mt-2"></div>
                 <div class="flex items-start sm:flex-row flex-col pt-8 justify-start gap-5">
-                    <div class="max-w-[20rem] w-full">
-                        <img src="${card.image}" class="h-full mx-auto sm:mx-0" alt="">
+                    <div class="max-w-[15rem] max-h-[10rem] w-full">
+                        <img src="${card.image}"  class=" ${card.title === "Hello Bank!" ? "w-40" : "w-full"}  mx-auto sm:mx-0" alt="">
                     </div>
                     <div>
                         <h2 class="text-2xl font-semibold">${card.title}</h2>

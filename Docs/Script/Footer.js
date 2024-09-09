@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             <p class="font-semibold">Square <br> <span class="pl-3">Finance</span></p>
             </div>
           </a>
-          <p class="text-lg text-gray-500 mb-12 text-center min-[1124px]:text-left">Confié dans plus de 100 pays et avec
-            2 millions de clients.</p>
+          <p class="text-lg text-gray-500 mb-12 text-center min-[1124px]:text-left">L’équipe de Square Finance est à votre disposition pour vous aider à changer de banque ou
+d’assurance. Nous mettons en avant uniquement les offres avantageuses du marché.</p>
           <div
             class="relative lg:flex-row gap-3 flex-col flex items-center justify-between max-[1124px]:max-w-2xl max-[1124px]:mx-auto ">
             <span class="absolute left-5 top-4 lg:top-5"><svg width="22" height="18" viewBox="0 0 22 18" fill="none"
@@ -34,20 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
         <div
           class="flex flex-col items-center sm:items-start min-[530px]:flex-row max-[1124px]:w-full max-[1124px]:justify-between gap-12 xl:gap-24 max-[1124px]:max-w-2xl max-[1124px]:mx-auto">
           <div class="block">
-            <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Pages</h4>
+            <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Rubriques</h4>
             <ul class="grid gap-6 text-center lg:text-left">
-              <li><a href="./story.html" class="text-gray-600 hover:text-gray-900">Accueil</a></li>
-              <li><a href="./Banques.html" class="text-gray-600 hover:text-gray-900">Banque Pro</a></li>
+              <li><a href="./a-propos.html" class="text-gray-600 hover:text-gray-900">Accueil</a></li>
+              <li><a href="./Banques.html" class="text-gray-600 hover:text-gray-900 text-nowrap">Banque Pro</a></li>
               <li><a href="./Assurances.html" class="text-gray-600 hover:text-gray-900">Assurance</a></li>
-              <li><a href="./Contact.html" class="text-gray-600 hover:text-gray-900">Contact</a></li>
-            </ul>
-          </div>
-          <div class="block">
-            <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Des autres</h4>
-            <ul class="grid gap-6 text-center lg:text-left">
-              <li><a href="./Privacy.html" class="text-gray-600 hover:text-gray-900">Mentions Légales</a></li>
-              <li><a href="./Privacy.html" class="text-gray-600 hover:text-gray-900">Condition générale</a></li>
               <li><a href="./Blog.html" class="text-gray-600 hover:text-gray-900">Blog</a></li>
+              </ul>
+              </div>
+              <div class="block">
+              <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Legal</h4>
+              <ul class="grid gap-6 text-center lg:text-left">
+              <li><a href="./mentions-legales.html" class="text-gray-600 hover:text-gray-900 text-nowrap">Mentions Légales</a></li>
+              <li><a href="./Contact.html" class="text-gray-600 hover:text-gray-900">Contact</a></li>
             </ul>
           </div>
           <div class="block">
@@ -55,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <ul class="grid gap-6 text-center lg:text-left">
               <li><a href="mailto:support@jecomparetout.fr" class="text-gray-600 hover:text-gray-900">Customer Support</a></li>
               <li><a href="mailto:support@jecomparetout.fr" class="text-gray-600 hover:text-gray-900">support@jecomparetout.fr</a></li>
-              <li><a href="./Privacy.html" class="text-gray-600 hover:text-gray-900">Licence</a></li>
+              <li><a href="./mentions-legales.html" class="text-gray-600 hover:text-gray-900">Licence</a></li>
             </ul>
           </div>
         </div>
@@ -63,8 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
       <div class="py-9 border-t border-gray-200">
         <div class="flex items-center justify-center flex-col gap-8 lg:gap-0 sm:flex-row sm:justify-between">
-          <span class="text-sm text-gray-500 ">©<a href="https://pagedone.io/">Square Finance</a>2024, All rights
-            reserved by Square Finance.</span>
+          <span class="text-sm text-gray-500 ">©<a href="https://pagedone.io/">Square Finance</a> 2024, Tous droits réservés par Square Finance</span>
           <div class="flex  space-x-6 sm:justify-center ">
             <a href="javascript:;" class="group flex justify-center items-center ">
               <i class="text-xl hover:scale-110 transition-all fa-brands fa-x-twitter"></i>

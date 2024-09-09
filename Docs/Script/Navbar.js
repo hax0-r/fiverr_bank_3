@@ -7,23 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <span class="ml-3 text-lg font-bold">Square <p class="leading-4 pl-3">Finance</p></span>
         </a>
         <nav class="lg:flex hidden">
-          <a href="./Banques.html" class="mr-5 navUnderLine font-medium">Banques Pro</a>
-          <a href="./Assurances.html" class="mr-5 navUnderLine font-medium">Assurances</a>
-          <a href="./story.html" class="mr-5 navUnderLine font-medium">Notre histoire</a>
+          <a href="./index.html#comparaisons" class="mr-5 navUnderLine font-medium">Banques en ligne</a>
+          <a href="./Banques.html" class="mr-5 navUnderLine font-medium">Comptes pro</a>
+          <a href="./Assurances.html" class="mr-5 navUnderLine font-medium">Offres d'assurance</a>
+          <a href="./a-propos.html" class="mr-5 navUnderLine font-medium">A propos</a>
           <a href="./blog.html" class="font-medium navUnderLine">Blog</a>
         </nav>
-        <div class="hidden md:block">
-          <a href="./index.html#allInOne">
-            <button
-              class="inline-flex items-center border-zinc-200 py-3 transition-all px-5 focus:outline-none hover:bg-gray-200 rounded-full border-2 text-base mt-4 md:mt-0">
-              Nos comparaisons
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </a>
-        </div>
         <i class="fa-solid fa-bars text-2xl cursor-pointer z-10 md:hidden" id="openNav"></i>
       </div>
     </header>
@@ -39,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="mt-10 flex flex-col gap-1">
         <a href="./Banques.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Banques Pro</a>
         <a href="./Assurances.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Assurances</a>
-        <a href="./story.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Notre histoire</a>
+        <a href="./a-propos.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Notre histoire</a>
         <a href="./blog.html" class="hover:bg-[#7e6c5e] hover:text-white transition-all rounded-lg p-3 font-medium">Blog</a>
       </div>
     </div>
