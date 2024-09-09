@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <div class="flex justify-between flex-col py-14 gap-14 lg:gap-20 min-[1124px]:flex-row">
         <div class="block  xl:max-w-lg">
-          <a href="./index.html" class="flex justify-center min-[1124px]:justify-start mb-8">
+          <a href="/index.html" class="flex justify-center min-[1124px]:justify-start mb-8">
             <div class="flex items-center gap-3">
-              <img src="./Docs/images/logo.png" class="h-16" alt="">
+              <img src="/Docs/images/logo.png" class="h-16" alt="">
                             <p class="font-semibold">Square <br> <span class="pl-3">Finance</span></p>
             </div>
           </a>
@@ -36,17 +36,17 @@ d’assurance. Nous mettons en avant uniquement les offres avantageuses du march
           <div class="block">
             <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Rubriques</h4>
             <ul class="grid gap-6 text-center lg:text-left">
-              <li><a href="./a-propos.html" class="text-gray-600 hover:text-gray-900">Accueil</a></li>
-              <li><a href="./Banques.html" class="text-gray-600 hover:text-gray-900 text-nowrap">Banque Pro</a></li>
-              <li><a href="./Assurances.html" class="text-gray-600 hover:text-gray-900">Assurance</a></li>
-              <li><a href="./Blog.html" class="text-gray-600 hover:text-gray-900">Blog</a></li>
+              <li><a href="/a-propos.html" class="text-gray-600 hover:text-gray-900">Accueil</a></li>
+              <li><a href="/Banques.html" class="text-gray-600 hover:text-gray-900 text-nowrap">Banque Pro</a></li>
+              <li><a href="/Assurances.html" class="text-gray-600 hover:text-gray-900">Assurance</a></li>
+              <li><a href="/Blog.html" class="text-gray-600 hover:text-gray-900">Blog</a></li>
               </ul>
               </div>
               <div class="block">
               <h4 class="text-lg text-gray-900 font-medium mb-7 text-center lg:text-left">Legal</h4>
               <ul class="grid gap-6 text-center lg:text-left">
-              <li><a href="./mentions-legales.html" class="text-gray-600 hover:text-gray-900 text-nowrap">Mentions Légales</a></li>
-              <li><a href="./Contact.html" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+              <li><a href="/mentions-legales.html" class="text-gray-600 hover:text-gray-900 text-nowrap">Mentions Légales</a></li>
+              <li><a href="/Contact.html" class="text-gray-600 hover:text-gray-900">Contact</a></li>
             </ul>
           </div>
           <div class="block">
@@ -54,7 +54,7 @@ d’assurance. Nous mettons en avant uniquement les offres avantageuses du march
             <ul class="grid gap-6 text-center lg:text-left">
               <li><a href="mailto:support@jecomparetout.fr" class="text-gray-600 hover:text-gray-900">Customer Support</a></li>
               <li><a href="mailto:support@jecomparetout.fr" class="text-gray-600 hover:text-gray-900">support@jecomparetout.fr</a></li>
-              <li><a href="./mentions-legales.html" class="text-gray-600 hover:text-gray-900">Licence</a></li>
+              <li><a href="/mentions-legales.html" class="text-gray-600 hover:text-gray-900">Licence</a></li>
             </ul>
           </div>
         </div>
