@@ -101,24 +101,26 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .cssGlass1:hover {
-background: rgba(173, 156, 140, 0.39);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(14px);
--webkit-backdrop-filter: blur(14px);
-border: 1px solid rgba(173, 156, 140, 0.38);
-}
-.cssGlassNav {
-background: rgba(173, 156, 140, 0.39);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(14px);
--webkit-backdrop-filter: blur(14px);
-border: 1px solid rgba(173, 156, 140, 0.38);
+    background: rgba(173, 156, 140, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(173, 156, 140, 0.38);
 }
 
-.resNavWidth{
+.cssGlassNav {
+    background: rgba(173, 156, 140, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(173, 156, 140, 0.38);
+}
+
+.resNavWidth {
     width: 100px;
 }
 
@@ -126,35 +128,36 @@ border: 1px solid rgba(173, 156, 140, 0.38);
     position: relative;
     padding: 0 2px;
     cursor: pointer;
-  
+
     &::before {
-      content: '';
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0%;
-      height: 2px;
-      background-color: #000000b0;
-      transition: 200ms all;
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #000000b0;
+        transition: 200ms all;
     }
-  
+
     &:hover::before {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
-  .slidein {
+.slidein {
     animation: slideAnimation 1s ease var(--slidein-delay, 0) forwards;
-  }
+}
 
-  @keyframes slideAnimation {
+@keyframes slideAnimation {
     from {
-      opacity: 0;
-      transform: translateY(-10px)
+        opacity: 0;
+        transform: translateY(-10px)
     }
-  
+
     to {
-      opacity: 1;
-      transform: translateY(0)
+        opacity: 1;
+        transform: translateY(0)
     }
-  }
+}
+

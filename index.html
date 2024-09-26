@@ -15,6 +15,43 @@
 </head>
 
 <body>
+  <div class="hidden" id="cookies">
+    <section
+      class="fixed max-w-md  z-50 p-4 mx-auto bg-white border border-gray-200 left-12 bottom-16 rounded-2xl">
+      <h2 class="font-semibold text-gray-800 del:text-white">🍪 Cookie Notice</h2>
+
+      <p class="mt-4 text-sm text-gray-600 del:text-gray-300">We use cookies to ensure that we give you the best
+        experience on our website. <a href="#" class="text-blue-500 hover:underline">Read cookies policies</a>. </p>
+
+      <div class="flex items-center justify-between mt-4 gap-x-4 shrink-0">
+        <button
+          class="text-xs text-gray-800 underline transition-colors duration-300 del:text-white del:hover:text-gray-400 hover:text-gray-600 focus:outline-none">
+          Manage your preferences
+        </button>
+
+        <button
+          class=" text-xs bg-[#7e6c5e] font-medium rounded-lg hover:bg-[#967a65] text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+          id="acceptCookies">
+          Accept
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const acceptCookies = document.getElementById("acceptCookies")
+    const cookies = document.getElementById("cookies")
+
+    setInterval(() => {
+      cookies.classList.add("block")
+      cookies.classList.remove("hidden")
+    }, 5000);
+
+    acceptCookies.addEventListener('click', () => {
+      cookies.style.display = "none"
+    })
+  </script>
+
   <section class="bg-zinc-100 pb-12 sm:pb-14 relative overflow-hidden">
     <div id="navbar" class="relative z-30 pb-20"></div>
 
@@ -39,7 +76,8 @@
         Gestion de vos Finances grâce à
         <span class="st">Square Finance</span>
       </h1>
-      <p class="max-w-md mx-auto opacity-0 slidein [--slidein-delay:500ms] text-center text-base font-normal leading-7 text-gray-500 ">
+      <p
+        class="max-w-md mx-auto opacity-0 slidein [--slidein-delay:500ms] text-center text-base font-normal leading-7 text-gray-500 ">
         Grâce à notre plateforme, comparez facilement prêts, assurances et crédits pour trouver les meilleures offres.
       </p>
     </div>
@@ -75,7 +113,8 @@
         </a>
       </div>
 
-      <div class="relative flex items-center overflow-hidden justify-center opacity-0 slidein [--slidein-delay:700ms] w-[35rem]">
+      <div
+        class="relative flex items-center overflow-hidden justify-center opacity-0 slidein [--slidein-delay:700ms] w-[35rem]">
         <img src="/Docs/images/Home/pngegg (2).png" class="h-[30rem] z-10" alt="">
         <img src="/Docs/images/Home/pngegg (6).png" class="absolute  h-[35rem] opacity-10  " alt="">
       </div>
@@ -142,13 +181,16 @@
       <div class="mt-6 border-t pt-12">
         <div class="grid grid-cols-3 gap-4 max-w-[70rem] mx-auto">
           <a href="/Banque/hellobank.html">
-            <div class="max-w-[17rem]"> <img src="/Docs/images/Home/Banks/hello.jpeg" alt="Image 1" class=" w-full  cursor-pointer"> </div>
+            <div class="max-w-[17rem]"> <img src="/Docs/images/Home/Banks/hello.jpeg" alt="Image 1"
+                class=" w-full  cursor-pointer"> </div>
           </a>
           <a href="/Banque/fortuneo.html">
-            <div class="max-w-[17rem]"> <img src="/Docs/images/Home/Banks/fortuneo.png" alt="Image 2" class=" w-full  cursor-pointer"> </div>
+            <div class="max-w-[17rem]"> <img src="/Docs/images/Home/Banks/fortuneo.png" alt="Image 2"
+                class=" w-full  cursor-pointer"> </div>
           </a>
           <a href="/Banque/boursobank.html">
-            <div class="max-w-[17rem]"> <img src="/Docs/images/Home/Banks/bourso.png" alt="Image 3" class=" w-full  cursor-pointer"> </div>
+            <div class="max-w-[17rem]"> <img src="/Docs/images/Home/Banks/bourso.png" alt="Image 3"
+                class=" w-full  cursor-pointer"> </div>
           </a>
         </div>
       </div>
@@ -648,8 +690,8 @@
           </div>
           <div class="flex flex-col"><img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Michael Johnson"
               class="h-10 w-10">
-            <p class="pt-2 text-sm font-semibold text-white">Michael J.            </p>
-            <p class="text-sm font-medium text-slate-100/70">Chef d’entreprise            </p>
+            <p class="pt-2 text-sm font-semibold text-white">Michael J. </p>
+            <p class="text-sm font-medium text-slate-100/70">Chef d’entreprise </p>
           </div>
         </div>
         <div
